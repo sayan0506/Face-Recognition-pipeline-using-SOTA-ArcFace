@@ -21,3 +21,4 @@ The dataset zip file or folder can be found from drive [link](https://drive.goog
 
 * [How to train a deep learning model using docker?](https://www.youtube.com/watch?v=Kzrfw-tAZew)
 * [ArcFace: Additive Angular Margin Loss for Deep Face Recognition - paperwithcode-reference](https://paperswithcode.com/paper/arcface-additive-angular-margin-loss-for-deep)
+* [InsightFace_Pytorch - Arcface Pytorch Implementation github](https://github.com/TreB1eN/InsightFace_Pytorch)
