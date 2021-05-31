@@ -1,3 +1,9 @@
+## Pretrained Mobilefacenet
+
+Pretrained model weight file is added here from **[InsightFace_Pytorch onedrive link](https://1drv.ms/u/s!AhMqVPD44cDOhkSMHodSH4rhfb5u)
+
+Model file: ****
+
 ## **Best Model files**
 
 This folder contains information of the best fitted model based on validation data.
