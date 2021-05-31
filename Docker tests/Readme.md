@@ -1,0 +1,1 @@
+Due to incapability of the Acer laptop, could not enable Virtualization or Hyper-V, and tried to install docker in colab, but in colab only the docker image and os inside that installed, no further module installed. 
