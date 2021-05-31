@@ -40,9 +40,7 @@ The train.py, test.py and related utilities to execute train, test pipeline can 
     git clone [repo_name]
 ```   
 
-2. Navigate to **"utilities folder"** which contains dependencies to run the pipeline.
-
-[utilities_path](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/tree/main/utilities)
+2. Navigate to **"utilities folder"** which contains dependencies to run the pipeline - [utilities_path](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/tree/main/utilities)
 
 ```bash
     cd [utilities_path]
