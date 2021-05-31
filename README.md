@@ -36,8 +36,10 @@ The train.py, test.py and related utilities to execute train, test pipeline can 
 
 Execute training
 
-  > python train.py -dataset [dataset_path] -model [model folder]
-
+```bash
+    python train.py -dataset [dataset_path] -model [model folder]
+```   
+    
 # **Reference**
 
 * [How to train a deep learning model using docker?](https://www.youtube.com/watch?v=Kzrfw-tAZew)
