@@ -1,5 +1,8 @@
 # Face-Recognition-pipeline-using-SOTA-ArcFace
-Face Recognition pipeline using SOTA ArcFace using Pytorch
+
+Face Recognition pipeline using SOTA ArcFace using Pytorch is inspired from the paper [ArcFace: Additive Angular Margin Loss for Deep Face Recognition](https://arxiv.org/pdf/1801.07698v3.pdf)
+
+Git repo: [Insightface_Pytorch](https://github.com/TreB1eN/InsightFace_Pytorch)
 
 # **Problem Statement**
 
