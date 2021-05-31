@@ -10,6 +10,6 @@ This folder contains the utility files to run the ML pipeline
 
 **Order of execution for the test pipeline**
 
-1. [test.py]() - implements the test pipeline
-2. [FaceDataset.py]() - implements custom torch dataset class to create valid, test dataset, dataloader 
-3. [inference_learner.py]() - implements the trained model initialization, load best trained weights..
+1. [test.py](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/blob/main/utilities/test.py) - implements the test pipeline
+2. [FaceDataset.py](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/blob/main/utilities/FaceDataset.py) - implements custom torch dataset class to create valid, test dataset, dataloader 
+3. [inference_learner.py](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/blob/main/utilities/inference_learner.py) - implements the trained model initialization, load best trained weights..
