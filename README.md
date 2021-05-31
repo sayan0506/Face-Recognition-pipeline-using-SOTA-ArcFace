@@ -68,6 +68,9 @@ The train.py, test.py and related utilities to execute train, test pipeline can 
     python test.py -dataset [dataset_path] -model [trained_mode_folder] -df [csv_folder]
 ```   
 
+* A simple demo of that train, test pipeline can be found [here](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/tree/main/test_demo).
+* Docker implementation in colab can be found [here](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/tree/main/Docker%20tests), though it needs more testing to execute the layers.
+
 # **Reference**
 
 * [How to train a deep learning model using docker?](https://www.youtube.com/watch?v=Kzrfw-tAZew)
