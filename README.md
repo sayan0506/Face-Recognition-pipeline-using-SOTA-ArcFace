@@ -28,6 +28,10 @@ The detailed code implementation for the ArcFace implementation using pytorch ca
 * The trained best model evaluated on validation data(lowest validation loss) can be foudn [here](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/tree/main/model_weights)
 * More on the models, implementation can be found [InsightFace_Pytorch - Arcface Pytorch Implementation github](https://github.com/TreB1eN/InsightFace_Pytorch) 
 
+## **ML Pipeline**
+
+The train.py, test.py and related utilities to execute train, test pipeline can be found from [utilities folder]()
+
 # **Reference**
 
 * [How to train a deep learning model using docker?](https://www.youtube.com/watch?v=Kzrfw-tAZew)
