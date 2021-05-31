@@ -36,7 +36,7 @@ The train.py, test.py and related utilities to execute train, test pipeline can 
 
 Execute training
 
-> python train.py -dataset [dataset_path] -model [model folder]
+  > python train.py -dataset [dataset_path] -model [model folder]
 
 # **Reference**
 
