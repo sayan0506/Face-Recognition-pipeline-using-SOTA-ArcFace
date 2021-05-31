@@ -34,10 +34,10 @@ The train.py, test.py and related utilities to execute train, test pipeline can 
 
 ## **Guide to run**
 
-1. Git clone the repo
+1. Git clone the repo - [repo_name]((https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace))
 
 ```bash
-    git clone [repo_name](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace)
+    git clone [repo_name]
 ```   
 
 1. Execute train pipeline
