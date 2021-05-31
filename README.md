@@ -32,6 +32,12 @@ The detailed code implementation for the ArcFace implementation using pytorch ca
 
 The train.py, test.py and related utilities to execute train, test pipeline can be found from **[utilities folder](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/tree/main/utilities)**
 
+#### **Guide to run**
+
+Execute training
+
+> python train.py -dataset [dataset_path] -model [model folder]
+
 # **Reference**
 
 * [How to train a deep learning model using docker?](https://www.youtube.com/watch?v=Kzrfw-tAZew)
