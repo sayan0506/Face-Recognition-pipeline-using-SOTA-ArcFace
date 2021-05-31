@@ -1,0 +1,1020 @@
+!!python/object/new:easydict.EasyDict
+dictitems:
+  batch_size: 64
+  best_model: &id014
+  - saved_model/model_step_75_loss_0.46628400683403015.path
+  - saved_model/head_step_75_loss_0.46628400683403015.path
+  - saved_model/optimizer_step_75_loss_0.46628400683403015.path
+  ce_loss: &id015 !!python/object:torch.nn.modules.loss.CrossEntropyLoss
+    _backward_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _buffers: !!python/object/apply:collections.OrderedDict
+    - - - weight
+        - null
+    _forward_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _is_full_backward_hook: null
+    _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _modules: !!python/object/apply:collections.OrderedDict
+    - []
+    _non_persistent_buffers_set: !!set {}
+    _parameters: !!python/object/apply:collections.OrderedDict
+    - []
+    _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    ignore_index: -100
+    reduction: mean
+    training: true
+  csv_path: csv_data_files
+  data_mode: ms1m
+  device: &id016 !!python/object/apply:torch.device
+  - cuda
+  - 0
+  embedding_size: 512
+  identity_list: &id017
+  - chris_evans
+  - chris_hemsworth
+  - mark_ruffalo
+  - robert_downey_jr
+  - scarlett_johansson
+  imgs_folder: /content/grive/MyDrive/Kaggle_Avengers_face_dataset/Marvels_face_dataset
+  input_size: &id011
+  - 112
+  - 112
+  lr: 0.001
+  milestones: &id018
+  - 12
+  - 15
+  - 18
+  momentum: 0.9
+  num_workers: 3
+  pin_memory: true
+  pretrained_save_path: .
+  save_path: saved_model
+  split_ratio: &id019
+  - 0.9
+  - 0.05
+  - 0.05
+  test_df: &id020 !!python/object:pandas.core.frame.DataFrame
+    _metadata: &id006 []
+    _mgr: !!python/object/new:pandas.core.internals.managers.BlockManager
+      state: !!python/tuple
+      - &id004
+        - !!python/object/apply:pandas.core.indexes.base._new_Index
+          - &id003 !!python/name:pandas.core.indexes.base.Index ''
+          - data: !!python/object/apply:numpy.core.multiarray._reconstruct
+              args:
+              - &id001 !!python/name:numpy.ndarray ''
+              - !!python/tuple
+                - 0
+              - !!binary |
+                Yg==
+              state: !!python/tuple
+              - 1
+              - !!python/tuple
+                - 2
+              - &id002 !!python/object/apply:numpy.dtype
+                args:
+                - O8
+                - false
+                - true
+                state: !!python/tuple
+                - 3
+                - '|'
+                - null
+                - null
+                - null
+                - -1
+                - -1
+                - 63
+              - false
+              - - Image
+                - Label
+            name: null
+        - !!python/object/apply:pandas.core.indexes.base._new_Index
+          - &id007 !!python/name:pandas.core.indexes.numeric.Int64Index ''
+          - data: !!python/object/apply:numpy.core.multiarray._reconstruct
+              args:
+              - *id001
+              - !!python/tuple
+                - 0
+              - !!binary |
+                Yg==
+              state: !!python/tuple
+              - 1
+              - !!python/tuple
+                - 14
+              - &id008 !!python/object/apply:numpy.dtype
+                args:
+                - i8
+                - false
+                - true
+                state: !!python/tuple
+                - 3
+                - <
+                - null
+                - null
+                - null
+                - -1
+                - -1
+                - 0
+              - false
+              - !!binary |
+                6AAAAAAAAAD0AAAAAAAAAK4AAAAAAAAAjQAAAAAAAACMAAAAAAAAAI8AAAAAAAAAFgAAAAAAAAA0
+                AAAAAAAAANMAAAAAAAAAAwAAAAAAAAA8AAAAAAAAAK8AAAAAAAAA6QAAAAAAAABmAAAAAAAAAA==
+            name: null
+      - - &id005 !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 2
+            - 14
+          - *id002
+          - true
+          - - scarlett_johansson36.png
+            - scarlett_johansson35.png
+            - robert_downey_jr12.png
+            - mark_ruffalo42.png
+            - mark_ruffalo2.png
+            - mark_ruffalo7.png
+            - chris_evans7.png
+            - chris_hemsworth10.png
+            - robert_downey_jr17.png
+            - chris_evans47.png
+            - chris_hemsworth25.png
+            - robert_downey_jr40.png
+            - scarlett_johansson10.png
+            - chris_hemsworth39.png
+            - scarlett_johansson
+            - scarlett_johansson
+            - robert_downey_jr
+            - mark_ruffalo
+            - mark_ruffalo
+            - mark_ruffalo
+            - chris_evans
+            - chris_hemsworth
+            - robert_downey_jr
+            - chris_evans
+            - chris_hemsworth
+            - robert_downey_jr
+            - scarlett_johansson
+            - chris_hemsworth
+      - - !!python/object/apply:pandas.core.indexes.base._new_Index
+          - *id003
+          - data: !!python/object/apply:numpy.core.multiarray._reconstruct
+              args:
+              - *id001
+              - !!python/tuple
+                - 0
+              - !!binary |
+                Yg==
+              state: !!python/tuple
+              - 1
+              - !!python/tuple
+                - 2
+              - *id002
+              - false
+              - - Image
+                - Label
+            name: null
+      - 0.14.1:
+          axes: *id004
+          blocks:
+          - mgr_locs: !!python/object/apply:builtins.slice
+            - 0
+            - 2
+            - 1
+            values: *id005
+    _typ: dataframe
+    attrs: {}
+  train_df: &id021 !!python/object:pandas.core.frame.DataFrame
+    _metadata: *id006
+    _mgr: !!python/object/new:pandas.core.internals.managers.BlockManager
+      state: !!python/tuple
+      - &id009
+        - !!python/object/apply:pandas.core.indexes.base._new_Index
+          - *id003
+          - data: !!python/object/apply:numpy.core.multiarray._reconstruct
+              args:
+              - *id001
+              - !!python/tuple
+                - 0
+              - !!binary |
+                Yg==
+              state: !!python/tuple
+              - 1
+              - !!python/tuple
+                - 2
+              - *id002
+              - false
+              - - Image
+                - Label
+            name: null
+        - !!python/object/apply:pandas.core.indexes.base._new_Index
+          - *id007
+          - data: !!python/object/apply:numpy.core.multiarray._reconstruct
+              args:
+              - *id001
+              - !!python/tuple
+                - 0
+              - !!binary |
+                Yg==
+              state: !!python/tuple
+              - 1
+              - !!python/tuple
+                - 246
+              - *id008
+              - false
+              - !!binary |
+                LgAAAAAAAADyAAAAAAAAAOAAAAAAAAAAvAAAAAAAAAAEAQAAAAAAAEoAAAAAAAAAjgAAAAAAAAAy
+                AAAAAAAAAKgAAAAAAAAAngAAAAAAAAC6AAAAAAAAAJkAAAAAAAAATAAAAAAAAADrAAAAAAAAACcA
+                AAAAAAAAdQAAAAAAAADBAAAAAAAAAMwAAAAAAAAAPQAAAAAAAADhAAAAAAAAAMgAAAAAAAAAxgAA
+                AAAAAABiAAAAAAAAABMAAAAAAAAARAAAAAAAAADlAAAAAAAAAB4AAAAAAAAAJgAAAAAAAAAdAAAA
+                AAAAAKYAAAAAAAAAgQAAAAAAAAAEAAAAAAAAAGoAAAAAAAAAiwAAAAAAAACxAAAAAAAAAJEAAAAA
+                AAAADAEAAAAAAADzAAAAAAAAAEIAAAAAAAAAJQAAAAAAAAAhAAAAAAAAAFcAAAAAAAAAewAAAAAA
+                AABAAAAAAAAAABQAAAAAAAAARgAAAAAAAACtAAAAAAAAAEkAAAAAAAAAiQAAAAAAAABeAAAAAAAA
+                AAUBAAAAAAAA9gAAAAAAAABSAAAAAAAAAHwAAAAAAAAAoQAAAAAAAACdAAAAAAAAAH8AAAAAAAAA
+                0QAAAAAAAABNAAAAAAAAAMAAAAAAAAAAwgAAAAAAAAC0AAAAAAAAANUAAAAAAAAAgwAAAAAAAAD1
+                AAAAAAAAALUAAAAAAAAACwEAAAAAAAAQAAAAAAAAADgAAAAAAAAAbQAAAAAAAAD6AAAAAAAAAAoA
+                AAAAAAAAywAAAAAAAACcAAAAAAAAAO0AAAAAAAAAVQAAAAAAAAApAAAAAAAAANkAAAAAAAAAOQAA
+                AAAAAACXAAAAAAAAAAYBAAAAAAAAYwAAAAAAAAAaAAAAAAAAAFsAAAAAAAAAmwAAAAAAAAB0AAAA
+                AAAAAJoAAAAAAAAAogAAAAAAAAACAAAAAAAAAKcAAAAAAAAAGwAAAAAAAAB9AAAAAAAAAG8AAAAA
+                AAAA4wAAAAAAAADJAAAAAAAAAFwAAAAAAAAA4gAAAAAAAAAPAAAAAAAAAFkAAAAAAAAAZAAAAAAA
+                AABuAAAAAAAAAF8AAAAAAAAAFwAAAAAAAACGAAAAAAAAAGkAAAAAAAAALAAAAAAAAACqAAAAAAAA
+                APgAAAAAAAAAiAAAAAAAAABBAAAAAAAAAH4AAAAAAAAAvgAAAAAAAAB3AAAAAAAAAN8AAAAAAAAA
+                PwAAAAAAAACyAAAAAAAAAJYAAAAAAAAADQEAAAAAAAAJAAAAAAAAAAgAAAAAAAAA1AAAAAAAAAAK
+                AQAAAAAAAA4AAAAAAAAA8QAAAAAAAAD+AAAAAAAAABUAAAAAAAAAxwAAAAAAAAB6AAAAAAAAALYA
+                AAAAAAAASwAAAAAAAADQAAAAAAAAAGsAAAAAAAAAAwEAAAAAAAAiAAAAAAAAAHMAAAAAAAAAqQAA
+                AAAAAADmAAAAAAAAADYAAAAAAAAAswAAAAAAAABPAAAAAAAAAHYAAAAAAAAADQAAAAAAAAAcAAAA
+                AAAAABIAAAAAAAAABgAAAAAAAAC3AAAAAAAAAKwAAAAAAAAAhAAAAAAAAABTAAAAAAAAAC0AAAAA
+                AAAAaAAAAAAAAAAHAAAAAAAAAMQAAAAAAAAApAAAAAAAAAAJAQAAAAAAAD4AAAAAAAAA1gAAAAAA
+                AAAwAAAAAAAAAIAAAAAAAAAAWgAAAAAAAABxAAAAAAAAAMoAAAAAAAAAzwAAAAAAAADqAAAAAAAA
+                AKsAAAAAAAAAYQAAAAAAAAAkAAAAAAAAAMMAAAAAAAAAzgAAAAAAAADcAAAAAAAAAIIAAAAAAAAA
+                MwAAAAAAAAABAQAAAAAAAP0AAAAAAAAA/AAAAAAAAAAIAQAAAAAAAL0AAAAAAAAA7AAAAAAAAABg
+                AAAAAAAAABkAAAAAAAAApQAAAAAAAAC5AAAAAAAAAPsAAAAAAAAARQAAAAAAAAAjAAAAAAAAAKMA
+                AAAAAAAAhQAAAAAAAAByAAAAAAAAAFgAAAAAAAAADwEAAAAAAABnAAAAAAAAABEBAAAAAAAA2AAA
+                AAAAAABUAAAAAAAAAAwAAAAAAAAAbAAAAAAAAABRAAAAAAAAAJgAAAAAAAAAEAEAAAAAAAAOAQAA
+                AAAAAIoAAAAAAAAAAAAAAAAAAABwAAAAAAAAAOQAAAAAAAAAhwAAAAAAAABQAAAAAAAAAF0AAAAA
+                AAAARwAAAAAAAAAqAAAAAAAAAPcAAAAAAAAABwEAAAAAAACQAAAAAAAAAN4AAAAAAAAAOgAAAAAA
+                AAB5AAAAAAAAAP8AAAAAAAAA3QAAAAAAAADuAAAAAAAAADUAAAAAAAAA7wAAAAAAAAA3AAAAAAAA
+                AL8AAAAAAAAA8AAAAAAAAACfAAAAAAAAALAAAAAAAAAAHwAAAAAAAAAvAAAAAAAAAEgAAAAAAAAA
+                0gAAAAAAAACUAAAAAAAAAFYAAAAAAAAAKAAAAAAAAAA7AAAAAAAAANcAAAAAAAAAAgEAAAAAAAAL
+                AAAAAAAAACsAAAAAAAAA2wAAAAAAAADFAAAAAAAAAE4AAAAAAAAAGAAAAAAAAAAxAAAAAAAAALgA
+                AAAAAAAAEQAAAAAAAADaAAAAAAAAAJMAAAAAAAAA
+            name: null
+      - - &id010 !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 2
+            - 246
+          - *id002
+          - true
+          - - chris_evans24.png
+            - scarlett_johansson4.png
+            - scarlett_johansson23.png
+            - robert_downey_jr5.png
+            - scarlett_johansson24.png
+            - chris_hemsworth4.png
+            - mark_ruffalo19.png
+            - chris_hemsworth11.png
+            - mark_ruffalo52.png
+            - mark_ruffalo66.png
+            - robert_downey_jr27.png
+            - mark_ruffalo9.png
+            - chris_hemsworth27.png
+            - scarlett_johansson25.png
+            - chris_evans3.png
+            - mark_ruffalo22.png
+            - robert_downey_jr25.png
+            - robert_downey_jr30.png
+            - chris_hemsworth29.png
+            - scarlett_johansson20.png
+            - robert_downey_jr28.png
+            - robert_downey_jr43.png
+            - chris_hemsworth23.png
+            - chris_evans5.png
+            - chris_hemsworth42.png
+            - scarlett_johansson41.png
+            - chris_evans19.png
+            - chris_evans38.png
+            - chris_evans43.png
+            - mark_ruffalo58.png
+            - mark_ruffalo34.png
+            - chris_evans13.png
+            - mark_ruffalo10.png
+            - mark_ruffalo12.png
+            - robert_downey_jr33.png
+            - mark_ruffalo46.png
+            - scarlett_johansson51.png
+            - scarlett_johansson29.png
+            - chris_hemsworth28.png
+            - chris_evans35.png
+            - chris_evans2.png
+            - chris_hemsworth31.png
+            - mark_ruffalo39.png
+            - chris_hemsworth17.png
+            - chris_evans44.png
+            - chris_hemsworth41.png
+            - robert_downey_jr47.png
+            - chris_hemsworth36.png
+            - mark_ruffalo21.png
+            - chris_hemsworth5.png
+            - scarlett_johansson2.png
+            - scarlett_johansson26.png
+            - chris_hemsworth52.png
+            - mark_ruffalo1.png
+            - mark_ruffalo48.png
+            - mark_ruffalo49.png
+            - mark_ruffalo14.png
+            - robert_downey_jr22.png
+            - chris_hemsworth21.png
+            - robert_downey_jr15.png
+            - robert_downey_jr51.png
+            - robert_downey_jr39.png
+            - robert_downey_jr20.png
+            - mark_ruffalo25.png
+            - scarlett_johansson46.png
+            - robert_downey_jr50.png
+            - scarlett_johansson50.png
+            - chris_evans49.png
+            - chris_hemsworth8.png
+            - mark_ruffalo40.png
+            - scarlett_johansson38.png
+            - chris_evans20.png
+            - robert_downey_jr1.png
+            - mark_ruffalo5.png
+            - scarlett_johansson3.png
+            - chris_hemsworth9.png
+            - chris_evans8.png
+            - robert_downey_jr38.png
+            - chris_hemsworth47.png
+            - mark_ruffalo60.png
+            - scarlett_johansson19.png
+            - chris_hemsworth45.png
+            - chris_evans45.png
+            - chris_hemsworth12.png
+            - mark_ruffalo50.png
+            - mark_ruffalo33.png
+            - mark_ruffalo59.png
+            - mark_ruffalo62.png
+            - chris_evans6.png
+            - mark_ruffalo6.png
+            - chris_evans18.png
+            - mark_ruffalo24.png
+            - mark_ruffalo37.png
+            - scarlett_johansson43.png
+            - robert_downey_jr21.png
+            - chris_hemsworth2.png
+            - scarlett_johansson34.png
+            - chris_evans37.png
+            - chris_hemsworth44.png
+            - chris_hemsworth46.png
+            - mark_ruffalo20.png
+            - chris_hemsworth34.png
+            - chris_evans39.png
+            - mark_ruffalo29.png
+            - mark_ruffalo15.png
+            - chris_evans25.png
+            - robert_downey_jr8.png
+            - scarlett_johansson16.png
+            - mark_ruffalo38.png
+            - chris_hemsworth24.png
+            - mark_ruffalo4.png
+            - robert_downey_jr9.png
+            - mark_ruffalo26.png
+            - scarlett_johansson40.png
+            - chris_hemsworth20.png
+            - robert_downey_jr6.png
+            - mark_ruffalo63.png
+            - scarlett_johansson54.png
+            - chris_evans50.png
+            - chris_evans36.png
+            - robert_downey_jr16.png
+            - scarlett_johansson6.png
+            - chris_evans23.png
+            - scarlett_johansson13.png
+            - scarlett_johansson27.png
+            - chris_evans22.png
+            - robert_downey_jr19.png
+            - mark_ruffalo43.png
+            - robert_downey_jr34.png
+            - chris_hemsworth30.png
+            - robert_downey_jr14.png
+            - mark_ruffalo44.png
+            - scarlett_johansson12.png
+            - chris_evans26.png
+            - mark_ruffalo18.png
+            - robert_downey_jr24.png
+            - scarlett_johansson37.png
+            - chris_hemsworth14.png
+            - robert_downey_jr45.png
+            - chris_hemsworth40.png
+            - mark_ruffalo30.png
+            - chris_evans28.png
+            - chris_evans9.png
+            - chris_evans10.png
+            - chris_evans11.png
+            - robert_downey_jr13.png
+            - robert_downey_jr29.png
+            - mark_ruffalo16.png
+            - chris_hemsworth3.png
+            - chris_evans21.png
+            - mark_ruffalo35.png
+            - chris_evans31.png
+            - robert_downey_jr36.png
+            - mark_ruffalo65.png
+            - scarlett_johansson7.png
+            - chris_hemsworth33.png
+            - robert_downey_jr35.png
+            - chris_evans15.png
+            - mark_ruffalo23.png
+            - chris_hemsworth16.png
+            - mark_ruffalo13.png
+            - robert_downey_jr31.png
+            - robert_downey_jr32.png
+            - scarlett_johansson45.png
+            - robert_downey_jr3.png
+            - chris_hemsworth38.png
+            - chris_evans1.png
+            - robert_downey_jr11.png
+            - robert_downey_jr48.png
+            - scarlett_johansson18.png
+            - mark_ruffalo36.png
+            - chris_hemsworth1.png
+            - scarlett_johansson15.png
+            - scarlett_johansson17.png
+            - scarlett_johansson33.png
+            - scarlett_johansson8.png
+            - robert_downey_jr18.png
+            - scarlett_johansson30.png
+            - chris_hemsworth26.png
+            - chris_evans40.png
+            - mark_ruffalo55.png
+            - robert_downey_jr49.png
+            - scarlett_johansson31.png
+            - chris_hemsworth13.png
+            - chris_evans30.png
+            - mark_ruffalo57.png
+            - mark_ruffalo32.png
+            - mark_ruffalo41.png
+            - chris_hemsworth18.png
+            - scarlett_johansson9.png
+            - mark_ruffalo45.png
+            - scarlett_johansson5.png
+            - robert_downey_jr46.png
+            - chris_hemsworth22.png
+            - chris_evans41.png
+            - mark_ruffalo28.png
+            - chris_hemsworth35.png
+            - mark_ruffalo64.png
+            - scarlett_johansson53.png
+            - scarlett_johansson52.png
+            - mark_ruffalo3.png
+            - chris_evans34.png
+            - mark_ruffalo17.png
+            - scarlett_johansson14.png
+            - mark_ruffalo11.png
+            - chris_hemsworth49.png
+            - chris_hemsworth43.png
+            - chris_hemsworth32.png
+            - chris_evans16.png
+            - scarlett_johansson11.png
+            - scarlett_johansson22.png
+            - mark_ruffalo56.png
+            - scarlett_johansson48.png
+            - chris_hemsworth48.png
+            - mark_ruffalo31.png
+            - scarlett_johansson21.png
+            - scarlett_johansson47.png
+            - scarlett_johansson39.png
+            - chris_hemsworth53.png
+            - scarlett_johansson49.png
+            - chris_hemsworth15.png
+            - robert_downey_jr44.png
+            - scarlett_johansson32.png
+            - mark_ruffalo8.png
+            - robert_downey_jr41.png
+            - chris_evans33.png
+            - chris_evans46.png
+            - chris_hemsworth51.png
+            - robert_downey_jr26.png
+            - mark_ruffalo61.png
+            - chris_hemsworth7.png
+            - chris_evans27.png
+            - chris_hemsworth37.png
+            - robert_downey_jr10.png
+            - scarlett_johansson42.png
+            - chris_evans29.png
+            - chris_evans12.png
+            - robert_downey_jr42.png
+            - robert_downey_jr4.png
+            - chris_hemsworth50.png
+            - chris_evans42.png
+            - chris_evans4.png
+            - robert_downey_jr37.png
+            - chris_evans14.png
+            - robert_downey_jr7.png
+            - mark_ruffalo47.png
+            - chris_evans
+            - scarlett_johansson
+            - scarlett_johansson
+            - robert_downey_jr
+            - scarlett_johansson
+            - chris_hemsworth
+            - mark_ruffalo
+            - chris_hemsworth
+            - mark_ruffalo
+            - mark_ruffalo
+            - robert_downey_jr
+            - mark_ruffalo
+            - chris_hemsworth
+            - scarlett_johansson
+            - chris_evans
+            - mark_ruffalo
+            - robert_downey_jr
+            - robert_downey_jr
+            - chris_hemsworth
+            - scarlett_johansson
+            - robert_downey_jr
+            - robert_downey_jr
+            - chris_hemsworth
+            - chris_evans
+            - chris_hemsworth
+            - scarlett_johansson
+            - chris_evans
+            - chris_evans
+            - chris_evans
+            - mark_ruffalo
+            - mark_ruffalo
+            - chris_evans
+            - mark_ruffalo
+            - mark_ruffalo
+            - robert_downey_jr
+            - mark_ruffalo
+            - scarlett_johansson
+            - scarlett_johansson
+            - chris_hemsworth
+            - chris_evans
+            - chris_evans
+            - chris_hemsworth
+            - mark_ruffalo
+            - chris_hemsworth
+            - chris_evans
+            - chris_hemsworth
+            - robert_downey_jr
+            - chris_hemsworth
+            - mark_ruffalo
+            - chris_hemsworth
+            - scarlett_johansson
+            - scarlett_johansson
+            - chris_hemsworth
+            - mark_ruffalo
+            - mark_ruffalo
+            - mark_ruffalo
+            - mark_ruffalo
+            - robert_downey_jr
+            - chris_hemsworth
+            - robert_downey_jr
+            - robert_downey_jr
+            - robert_downey_jr
+            - robert_downey_jr
+            - mark_ruffalo
+            - scarlett_johansson
+            - robert_downey_jr
+            - scarlett_johansson
+            - chris_evans
+            - chris_hemsworth
+            - mark_ruffalo
+            - scarlett_johansson
+            - chris_evans
+            - robert_downey_jr
+            - mark_ruffalo
+            - scarlett_johansson
+            - chris_hemsworth
+            - chris_evans
+            - robert_downey_jr
+            - chris_hemsworth
+            - mark_ruffalo
+            - scarlett_johansson
+            - chris_hemsworth
+            - chris_evans
+            - chris_hemsworth
+            - mark_ruffalo
+            - mark_ruffalo
+            - mark_ruffalo
+            - mark_ruffalo
+            - chris_evans
+            - mark_ruffalo
+            - chris_evans
+            - mark_ruffalo
+            - mark_ruffalo
+            - scarlett_johansson
+            - robert_downey_jr
+            - chris_hemsworth
+            - scarlett_johansson
+            - chris_evans
+            - chris_hemsworth
+            - chris_hemsworth
+            - mark_ruffalo
+            - chris_hemsworth
+            - chris_evans
+            - mark_ruffalo
+            - mark_ruffalo
+            - chris_evans
+            - robert_downey_jr
+            - scarlett_johansson
+            - mark_ruffalo
+            - chris_hemsworth
+            - mark_ruffalo
+            - robert_downey_jr
+            - mark_ruffalo
+            - scarlett_johansson
+            - chris_hemsworth
+            - robert_downey_jr
+            - mark_ruffalo
+            - scarlett_johansson
+            - chris_evans
+            - chris_evans
+            - robert_downey_jr
+            - scarlett_johansson
+            - chris_evans
+            - scarlett_johansson
+            - scarlett_johansson
+            - chris_evans
+            - robert_downey_jr
+            - mark_ruffalo
+            - robert_downey_jr
+            - chris_hemsworth
+            - robert_downey_jr
+            - mark_ruffalo
+            - scarlett_johansson
+            - chris_evans
+            - mark_ruffalo
+            - robert_downey_jr
+            - scarlett_johansson
+            - chris_hemsworth
+            - robert_downey_jr
+            - chris_hemsworth
+            - mark_ruffalo
+            - chris_evans
+            - chris_evans
+            - chris_evans
+            - chris_evans
+            - robert_downey_jr
+            - robert_downey_jr
+            - mark_ruffalo
+            - chris_hemsworth
+            - chris_evans
+            - mark_ruffalo
+            - chris_evans
+            - robert_downey_jr
+            - mark_ruffalo
+            - scarlett_johansson
+            - chris_hemsworth
+            - robert_downey_jr
+            - chris_evans
+            - mark_ruffalo
+            - chris_hemsworth
+            - mark_ruffalo
+            - robert_downey_jr
+            - robert_downey_jr
+            - scarlett_johansson
+            - robert_downey_jr
+            - chris_hemsworth
+            - chris_evans
+            - robert_downey_jr
+            - robert_downey_jr
+            - scarlett_johansson
+            - mark_ruffalo
+            - chris_hemsworth
+            - scarlett_johansson
+            - scarlett_johansson
+            - scarlett_johansson
+            - scarlett_johansson
+            - robert_downey_jr
+            - scarlett_johansson
+            - chris_hemsworth
+            - chris_evans
+            - mark_ruffalo
+            - robert_downey_jr
+            - scarlett_johansson
+            - chris_hemsworth
+            - chris_evans
+            - mark_ruffalo
+            - mark_ruffalo
+            - mark_ruffalo
+            - chris_hemsworth
+            - scarlett_johansson
+            - mark_ruffalo
+            - scarlett_johansson
+            - robert_downey_jr
+            - chris_hemsworth
+            - chris_evans
+            - mark_ruffalo
+            - chris_hemsworth
+            - mark_ruffalo
+            - scarlett_johansson
+            - scarlett_johansson
+            - mark_ruffalo
+            - chris_evans
+            - mark_ruffalo
+            - scarlett_johansson
+            - mark_ruffalo
+            - chris_hemsworth
+            - chris_hemsworth
+            - chris_hemsworth
+            - chris_evans
+            - scarlett_johansson
+            - scarlett_johansson
+            - mark_ruffalo
+            - scarlett_johansson
+            - chris_hemsworth
+            - mark_ruffalo
+            - scarlett_johansson
+            - scarlett_johansson
+            - scarlett_johansson
+            - chris_hemsworth
+            - scarlett_johansson
+            - chris_hemsworth
+            - robert_downey_jr
+            - scarlett_johansson
+            - mark_ruffalo
+            - robert_downey_jr
+            - chris_evans
+            - chris_evans
+            - chris_hemsworth
+            - robert_downey_jr
+            - mark_ruffalo
+            - chris_hemsworth
+            - chris_evans
+            - chris_hemsworth
+            - robert_downey_jr
+            - scarlett_johansson
+            - chris_evans
+            - chris_evans
+            - robert_downey_jr
+            - robert_downey_jr
+            - chris_hemsworth
+            - chris_evans
+            - chris_evans
+            - robert_downey_jr
+            - chris_evans
+            - robert_downey_jr
+            - mark_ruffalo
+      - - !!python/object/apply:pandas.core.indexes.base._new_Index
+          - *id003
+          - data: !!python/object/apply:numpy.core.multiarray._reconstruct
+              args:
+              - *id001
+              - !!python/tuple
+                - 0
+              - !!binary |
+                Yg==
+              state: !!python/tuple
+              - 1
+              - !!python/tuple
+                - 2
+              - *id002
+              - false
+              - - Image
+                - Label
+            name: null
+      - 0.14.1:
+          axes: *id009
+          blocks:
+          - mgr_locs: !!python/object/apply:builtins.slice
+            - 0
+            - 2
+            - 1
+            values: *id010
+    _typ: dataframe
+    attrs: {}
+  transform: &id022 !!python/object:torchvision.transforms.transforms.Compose
+    transforms:
+    - !!python/object:torchvision.transforms.transforms.RandomHorizontalFlip
+      _backward_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      _buffers: !!python/object/apply:collections.OrderedDict
+      - []
+      _forward_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      _is_full_backward_hook: null
+      _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      _modules: !!python/object/apply:collections.OrderedDict
+      - []
+      _non_persistent_buffers_set: !!set {}
+      _parameters: !!python/object/apply:collections.OrderedDict
+      - []
+      _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      p: 0.5
+      training: true
+    - !!python/object:torchvision.transforms.transforms.ToTensor {}
+    - !!python/object:torchvision.transforms.transforms.Normalize
+      _backward_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      _buffers: !!python/object/apply:collections.OrderedDict
+      - []
+      _forward_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      _is_full_backward_hook: null
+      _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      _modules: !!python/object/apply:collections.OrderedDict
+      - []
+      _non_persistent_buffers_set: !!set {}
+      _parameters: !!python/object/apply:collections.OrderedDict
+      - []
+      _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      inplace: false
+      mean:
+      - 0.5
+      - 0.5
+      - 0.5
+      std:
+      - 0.5
+      - 0.5
+      - 0.5
+      training: true
+    - !!python/object:torchvision.transforms.transforms.Resize
+      _backward_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      _buffers: !!python/object/apply:collections.OrderedDict
+      - []
+      _forward_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      _is_full_backward_hook: null
+      _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      _modules: !!python/object/apply:collections.OrderedDict
+      - []
+      _non_persistent_buffers_set: !!set {}
+      _parameters: !!python/object/apply:collections.OrderedDict
+      - []
+      _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+      - []
+      interpolation: !!python/object/apply:torchvision.transforms.functional.InterpolationMode
+      - bicubic
+      size: *id011
+      training: true
+  use_mobilefacenet: true
+  valid_df: &id023 !!python/object:pandas.core.frame.DataFrame
+    _metadata: *id006
+    _mgr: !!python/object/new:pandas.core.internals.managers.BlockManager
+      state: !!python/tuple
+      - &id012
+        - !!python/object/apply:pandas.core.indexes.base._new_Index
+          - *id003
+          - data: !!python/object/apply:numpy.core.multiarray._reconstruct
+              args:
+              - *id001
+              - !!python/tuple
+                - 0
+              - !!binary |
+                Yg==
+              state: !!python/tuple
+              - 1
+              - !!python/tuple
+                - 2
+              - *id002
+              - false
+              - - Image
+                - Label
+            name: null
+        - !!python/object/apply:pandas.core.indexes.base._new_Index
+          - *id007
+          - data: !!python/object/apply:numpy.core.multiarray._reconstruct
+              args:
+              - *id001
+              - !!python/tuple
+                - 0
+              - !!binary |
+                Yg==
+              state: !!python/tuple
+              - 1
+              - !!python/tuple
+                - 14
+              - *id008
+              - false
+              - !!binary |
+                BQAAAAAAAAD5AAAAAAAAAGUAAAAAAAAAIAAAAAAAAAAAAQAAAAAAAOcAAAAAAAAAzQAAAAAAAAB4
+                AAAAAAAAALsAAAAAAAAAkgAAAAAAAABDAAAAAAAAAKAAAAAAAAAAlQAAAAAAAAABAAAAAAAAAA==
+            name: null
+      - - &id013 !!python/object/apply:numpy.core.multiarray._reconstruct
+          args:
+          - *id001
+          - !!python/tuple
+            - 0
+          - !!binary |
+            Yg==
+          state: !!python/tuple
+          - 1
+          - !!python/tuple
+            - 2
+            - 14
+          - *id002
+          - true
+          - - chris_evans48.png
+            - scarlett_johansson44.png
+            - chris_hemsworth6.png
+            - chris_evans17.png
+            - scarlett_johansson28.png
+            - scarlett_johansson1.png
+            - robert_downey_jr2.png
+            - mark_ruffalo27.png
+            - robert_downey_jr23.png
+            - mark_ruffalo53.png
+            - chris_hemsworth19.png
+            - mark_ruffalo51.png
+            - mark_ruffalo54.png
+            - chris_evans32.png
+            - chris_evans
+            - scarlett_johansson
+            - chris_hemsworth
+            - chris_evans
+            - scarlett_johansson
+            - scarlett_johansson
+            - robert_downey_jr
+            - mark_ruffalo
+            - robert_downey_jr
+            - mark_ruffalo
+            - chris_hemsworth
+            - mark_ruffalo
+            - mark_ruffalo
+            - chris_evans
+      - - !!python/object/apply:pandas.core.indexes.base._new_Index
+          - *id003
+          - data: !!python/object/apply:numpy.core.multiarray._reconstruct
+              args:
+              - *id001
+              - !!python/tuple
+                - 0
+              - !!binary |
+                Yg==
+              state: !!python/tuple
+              - 1
+              - !!python/tuple
+                - 2
+              - *id002
+              - false
+              - - Image
+                - Label
+            name: null
+      - 0.14.1:
+          axes: *id012
+          blocks:
+          - mgr_locs: !!python/object/apply:builtins.slice
+            - 0
+            - 2
+            - 1
+            values: *id013
+    _typ: dataframe
+    attrs: {}
+state:
+  batch_size: 64
+  best_model: *id014
+  ce_loss: *id015
+  csv_path: csv_data_files
+  data_mode: ms1m
+  device: *id016
+  embedding_size: 512
+  identity_list: *id017
+  imgs_folder: /content/grive/MyDrive/Kaggle_Avengers_face_dataset/Marvels_face_dataset
+  input_size: *id011
+  lr: 0.001
+  milestones: *id018
+  momentum: 0.9
+  num_workers: 3
+  pin_memory: true
+  pretrained_save_path: .
+  save_path: saved_model
+  split_ratio: *id019
+  test_df: *id020
+  train_df: *id021
+  transform: *id022
+  use_mobilefacenet: true
+  valid_df: *id023
