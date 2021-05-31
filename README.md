@@ -36,28 +36,28 @@ The train.py, test.py and related utilities to execute train, test pipeline can 
 
 1. Download and unzip the dataset from [here](https://www.kaggle.com/rawatjitesh/avengers-face-recognition)
 
-2. Git clone the repo - [repo_name]((https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace))
+2. Git clone the repo - [repo_name](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace)
 
 ```bash
     git clone [repo_name]
 ```   
-3. Navigate to repo to install dependencies from - [requirements.txt]()
+3. Navigate to repo to install dependencies from - [requirements.txt](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/blob/main/requirements.txt)
 
 ```bash
     cd Face-Recognition-pipeline-using-SOTA-ArcFace
     pip install -r requirements.txt
 ```   
-3. Navigate to **"utilities folder"** which contains dependencies to run the pipeline - [utilities_path](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/tree/main/utilities)
+4. Navigate to **"utilities folder"** which contains dependencies to run the pipeline - [utilities_path](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/tree/main/utilities)
 
 ```bash
     cd [utilities_path]
 ```   
-4. Execute train pipeline - [pre-trained-mobilefacenet model folder](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/tree/main/model_weights). The train_pipeline code can be tweaked little to change the pre-trained model file.
+5. Execute train pipeline - [pre-trained-mobilefacenet model folder](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/tree/main/model_weights). The train_pipeline code can be tweaked little to change the pre-trained model file.
 
 ```bash
     python train.py -dataset [dataset_path] -model [pre-trained-mobilefacenet model folder]
 ```   
-5. Execute test pipeline - 
+6. Execute test pipeline - 
 * [trained_mode_folder](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/tree/main/model_weights). The train_pipeline code can be tweaked little to change the pre-trained model file.
 * [csv_folder_demo](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/tree/main/demo_csv), the path where the train, valid, test csv files are stored from the dataframe
 
