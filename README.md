@@ -30,7 +30,7 @@ The detailed code implementation for the ArcFace implementation using pytorch ca
 
 ## **ML Pipeline**
 
-The train.py, test.py and related utilities to execute train, test pipeline can be found from [utilities folder]()
+The train.py, test.py and related utilities to execute train, test pipeline can be found from **[utilities folder](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/tree/main/utilities)**
 
 # **Reference**
 
