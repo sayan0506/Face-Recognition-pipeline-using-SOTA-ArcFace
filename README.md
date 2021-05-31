@@ -40,15 +40,17 @@ The train.py, test.py and related utilities to execute train, test pipeline can 
     git clone [repo_name]
 ```   
 
-1. Execute train pipeline
+2. Execute train pipeline
+
+[pre-trained-mobilefacenet model folder](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/tree/main/model_weights). Or the train_pipeline code can be tweaked little to change the pre-trained model file.
 
 ```bash
-    python train.py -dataset [dataset_path] -model [model folder]
+    python train.py -dataset [dataset_path] -model [pre-trained-mobilefacenet model folder]
 ```   
-2. Execute test pipeline
+3. Execute test pipeline
 
 ```bash
-    python test.py -dataset [dataset_path] -model [model folder] -df [cdv_folder]
+    python test.py -dataset [dataset_path] -model [trained_mode_folder] -df [cdv_folder]
 ```   
 
 # **Reference**
