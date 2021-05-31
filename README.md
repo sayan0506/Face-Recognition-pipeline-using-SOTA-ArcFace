@@ -21,10 +21,18 @@ The dataset zip file or folder can be found from drive [link](https://drive.goog
 
 The detailed code implementation for the ArcFace implementation using pytorch can be found from [colab notebook](https://colab.research.google.com/drive/1l3HfvGbvRxlV2XxZ_9gidsQdvPui1JcS?usp=sharing)
 
+# **Best Model**
+
+* We have choosen [MobileFacenet model](https://arxiv.org/abs/1804.07573), which is a lightweight model as compared to the vailable pre-trained [IR-SR50 model](https://arxiv.org/abs/1801.07698), 
+* We have done transfer learning using pre-trained mobile-facenet model trained on MS1M, VGG2, Emore dataset. 
+* The trained best model evaluated on validation data(lowest validation loss) can be foudn [here](https://github.com/sayan0506/Face-Recognition-pipeline-using-SOTA-ArcFace/tree/main/model_weights)
+* More on the models, implementation can be found [InsightFace_Pytorch - Arcface Pytorch Implementation github](https://github.com/TreB1eN/InsightFace_Pytorch) 
+
 # **Reference**
 
 * [How to train a deep learning model using docker?](https://www.youtube.com/watch?v=Kzrfw-tAZew)
 * [ArcFace: Additive Angular Margin Loss for Deep Face Recognition - paperwithcode-reference](https://paperswithcode.com/paper/arcface-additive-angular-margin-loss-for-deep)
 * [InsightFace_Pytorch - Arcface Pytorch Implementation github](https://github.com/TreB1eN/InsightFace_Pytorch)
+* [MobileFaceNets: Efficient CNNs for Accurate Real-Time Face Verification on Mobile Devices](https://arxiv.org/abs/1804.07573)
 * [Docker Documentation](https://docs.docker.com/)
 * [Docker For Data Scientists](https://www.youtube.com/watch?v=0qG_0CPQhpg)
