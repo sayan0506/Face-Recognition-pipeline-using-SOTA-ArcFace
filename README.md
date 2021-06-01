@@ -79,3 +79,4 @@ The train.py, test.py and related utilities to execute train, test pipeline can 
 * [MobileFaceNets: Efficient CNNs for Accurate Real-Time Face Verification on Mobile Devices](https://arxiv.org/abs/1804.07573)
 * [Docker Documentation](https://docs.docker.com/)
 * [Docker For Data Scientists](https://www.youtube.com/watch?v=0qG_0CPQhpg)
+* [Joint Face Detection and Alignment using Multi-task Cascaded Convolutional Networks](https://arxiv.org/ftp/arxiv/papers/1604/1604.02878.pdf)
