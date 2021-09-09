@@ -80,3 +80,4 @@ The train.py, test.py and related utilities to execute train, test pipeline can 
 * [Docker Documentation](https://docs.docker.com/)
 * [Docker For Data Scientists](https://www.youtube.com/watch?v=0qG_0CPQhpg)
 * [Joint Face Detection and Alignment using Multi-task Cascaded Convolutional Networks](https://arxiv.org/ftp/arxiv/papers/1604/1604.02878.pdf)
+* [Additive Margin Softmax Loss (AM-Softmax)](https://towardsdatascience.com/additive-margin-softmax-loss-am-softmax-912e11ce1c6b)
